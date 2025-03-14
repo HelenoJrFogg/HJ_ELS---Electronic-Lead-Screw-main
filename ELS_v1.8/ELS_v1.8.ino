@@ -3,7 +3,8 @@
 // Firmware V1.8 - 20/06/2022
 // Encoder PULL_UP configured by default
 
-#include <LiquidCrystal.h>    //include la libreria di controllo del display LCD
+//#include <LiquidCrystal.h>    //include la libreria di controllo del display LCD
+
 #include <EEPROM.h>           //include la libreria per il controllo della EEPROM
 //#include <YetAnotherPcInt.h>  //include la libreria per l'utilizzo di interrupt su ogni pin (PcInt)
 #include <avr/pgmspace.h>     //include la libreria per l'utilizzo della flash come storage (per le stringhe)
@@ -50,7 +51,16 @@
 
 
 // initialize the LCD library with the references of the interface pins
-LiquidCrystal lcd(LCD_RS, LCD_RW, LCD_EN, LCD_D4, LCD_D5, LCD_D6, LCD_D7); //inizializza LCD
+//LiquidCrystal lcd(LCD_RS, LCD_RW, LCD_EN, LCD_D4, LCD_D5, LCD_D6, LCD_D7); //inizializza LCD
+
+//LCD...
+
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x3F,20,4);
+//LiquidCrystal_I2C lcd(0x27,20,4);
+
+
 
 #define PRESSED LOW               //costante per determinare la pressione dei pulsanti
 
@@ -255,7 +265,12 @@ void setup()
   Serial.println("ELS v1.8");
   Serial.println("debug session");
   */ //END DEBUG
-  lcd.begin(20, 4);
+ // lcd.begin(20, 4);
+
+  lcd.init();
+  delay(500);
+  lcd.backlight();
+
   lcd.print("Electronic LeadScrew");
   lcd.setCursor(9,1);
   lcd.print("by");
