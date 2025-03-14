@@ -1,26 +1,26 @@
-const char IMP0[] PROGMEM = "*** IMPOSTAZIONI ***";
-const char IMP1[] PROGMEM = "passi enc. mandrino";
-const char IMP2[] PROGMEM = "passi stepper vite";
+const char IMP0[] PROGMEM = "*** CONFIGURACOES ***";
+const char IMP1[] PROGMEM = "passo enc. placa";
+const char IMP2[] PROGMEM = "passo stepper vite";
 const char IMP3[] PROGMEM = "passo vite madre";
-const char IMP4[] PROGMEM = "rit. accelerazione";
-const char IMP5[] PROGMEM = "rit. decelerazione";
-const char IMP6[] PROGMEM = "rotazione standard";
-const char IMP7[] PROGMEM = "avanzamento carro 1";
-const char IMP8[] PROGMEM = "avanzamento trasv 1";
-const char IMP9[] PROGMEM = "avanzamento carro 2";
-const char IMP10[] PROGMEM = "avanzamento trasv 2";
-const char IMP11[] PROGMEM = "avanzamento carro 3";
-const char IMP12[] PROGMEM = "avanzamento trasv 3";
-const char IMP13[] PROGMEM = "avanzamento carro 4";
-const char IMP14[] PROGMEM = "avanzamento trasv 4";
+const char IMP4[] PROGMEM = "taxa. aceleracao";
+const char IMP5[] PROGMEM = "taxa. desaceleracao";
+const char IMP6[] PROGMEM = "rotacao standard";
+const char IMP7[] PROGMEM = "avanco carro 1";
+const char IMP8[] PROGMEM = "avanco trasv 1";
+const char IMP9[] PROGMEM = "avanco carro 2";
+const char IMP10[] PROGMEM = "avanco trasv 2";
+const char IMP11[] PROGMEM = "avanco carro 3";
+const char IMP12[] PROGMEM = "avanco trasv 3";
+const char IMP13[] PROGMEM = "avanco carro 4";
+const char IMP14[] PROGMEM = "avanco trasv 4";
 const char IMP15[] PROGMEM = "offset filetto";
 const char IMP16[] PROGMEM = "NORTON";
 const char IMP17[] PROGMEM = "Vel max stepper";
 const char IMP18[] PROGMEM = "taratura";
 const char IMP19[] PROGMEM = "ripristina valori";   //<=== FINE MENU'
 const char IMP20[] PROGMEM = "SEL: OK";
-const char IMP21[] PROGMEM = "ORARIA";              //VALORE PER VOCE IMP[6]
-const char IMP22[] PROGMEM = "ANTI-ORARIA";         //VALORE PER VOCE IMP[6]
+const char IMP21[] PROGMEM = "HORARIO";              //VALORE PER VOCE IMP[6]
+const char IMP22[] PROGMEM = "ANTI-HORARIO";         //VALORE PER VOCE IMP[6]
 
 
 const char* const MenuImpostazioni[] PROGMEM = {IMP0, IMP1, IMP2, IMP3, IMP4, IMP5, IMP6, IMP7, IMP8, IMP9,
